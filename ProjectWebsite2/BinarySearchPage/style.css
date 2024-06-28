@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-box{
+    background-color: bisque;
+    height: 100vh;
+    width: 100vw;
+    border: 3px solid black;
+}
+
+
+.title{
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+.positions{
+    height: 10vh;
+    border: 2px solid black;
+    margin-bottom: 5vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.si, .ei, .mid{
+    height: 70%;
+    width: 10%;
+    border: 2px solid black;
+    margin: 0 3%;
+    display: flex;
+}
+
+.positions div div{
+    height: 100%;
+    width: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+.si .text{
+    background-color: rgb(36, 36, 228);
+}
+
+.ei .text{
+    background-color: rgb(255, 39, 39);
+
+}
+
+.mid .text{
+    background-color: rgb(120, 118, 118);
+}
+
+
+
+.comparison{
+    height: 10vh;
+    border: 2px solid black;
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comparison div{
+    height: 70%;
+    width: 6%;
+    border: 2px solid black;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+
+
+
+.box{
+    height: 25vh;
+    border: 2px solid black;
+    margin-top: 5vh;
+}
+
+.box div{
+    height: 33%;
+    border: 2px solid rebeccapurple;
+}
+
+.arrow{
+    display: flex;
+    align-items:end ;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.array{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.start{
+    margin-top:8vh ;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button{
+    height: 90%;
+    width: 15vw;
+    font-size: 1.3rem;
+    margin: 0 5%;
+}
+
+.start input{
+    height: 90%;
+    width: 4vw;
+    font-size: 1.3rem;
+    margin: 0 0 0 5%;
+    padding-left: 5px;
+
+}
+
+.search{
+    height: 90%;
+    width: 5vw;
+    font-size: 1.1rem;
+}
+
+
+@keyframes blink {
+    25%{
+        background-color: rgb(56, 168, 56);
+    }
+    50%{
+        background-color: transparent;
+    }
+    75%{
+        background-color: rgb(56, 168, 56);
+    }
+}

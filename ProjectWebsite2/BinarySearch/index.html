@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Binary Search</title>
+  </head>
+  <body>
+
+    <header>
+      
+      <div id="title">Binary Search</div>
+      <div id="inputs">
+        <div>
+          <label>Array:</label>
+          <input type="text" id="array-input" name="array" />
+        </div>
+
+        <div class="key-input">
+          <label >Key:</label>
+          <input id="key-inputfeild" type="number">
+        </div>
+
+      </div>
+      <div id="options">
+        <button  onclick="array()">Create Array</button>
+        <button id="trv-btn" onclick="startTraversal()">Search</button>
+      </div>
+    </header>
+    <div id="array-container">
+       <div id="mark-visual" ></div>
+       <div id="array-visual"></div>
+    </div>
+
+    <div id="footer">
+      <div class="footer-divs">
+        <div class="gray"></div>
+        <p> - excluded (the value is either greater than key or less than key , so can't be answer)</p>
+      </div>
+      <div class="footer-divs">
+        <div class="blue"></div>
+        <p> - still not processed</p>
+      </div>
+      <div class="footer-divs">
+        <div class="green"></div>
+        <p> - this is key</p>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./js/nodes.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+
+

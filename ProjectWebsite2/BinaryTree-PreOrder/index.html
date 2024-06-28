@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Pre Order</title>
+  </head>
+  <body>
+
+    <header>
+      
+      <div id="title">Pre Order</div>
+      <div class="main-div">
+        <div>
+          <label>Array:</label><br />
+          <input type="text" id="array-input" name="array" />
+          <div id="options">
+            <button onclick="treeAndArray()">Binary Tree Visualization</button>
+            <button id="trv-btn" onclick="startTraversal()">Start Traversal</button>
+          </div>  
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: start;">
+          <div class="instructions">
+            <div class="instructions-div" >
+              <div id="blue"></div>
+              <p> - visited but value not processed</p>
+            </div>
+            <div class="instructions-div">
+              <div id="gray"></div>
+              <p> - remaining</p>
+            </div>
+            <div class="instructions-div">
+              <div id="green"></div>
+              <p> - visited and value processed</p>
+            </div>
+          </div>
+
+          <div class="instructions">
+            <div class="instructions-div">
+              <div id="highlighted"></div>
+              <p> - current node</p>
+            </div>
+            <p>*when highlighter disappears from screen it is on null node which is not represented </p>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <div id="binary-tree"></div>
+    <div id="array-container">
+      <div id="array-visual"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./js/nodes.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+      function toggleInstructions() {
+        const instructionStrip = document.getElementById('instruction-strip');
+        if (instructionStrip.classList.contains('hidden')) {
+          instructionStrip.classList.remove('hidden');
+        } else {
+          instructionStrip.classList.add('hidden');
+        }
+      }
+    </script>
+  </body>
+</html>

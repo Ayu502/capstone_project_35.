@@ -1,0 +1,183 @@
+html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body { 
+    /* font-family: Calibri, sans-serif; */
+    /* background-color: rgb(33, 184, 73); */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('1.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  /* body {
+    
+  } */
+  
+  input {
+    font-size: 1.1em;
+  }
+  
+  label  {
+    font-size: 1.1em;
+  }
+  
+  #title {
+    
+    background-color: #87431D;
+    font-size: 1.1em;
+    color: white;
+    
+    border: none;
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 1.75em;
+  
+  }
+  
+  #blurb {
+    background-color: rgba(255, 255, 255, 0.386);
+    text-align: center;
+    margin: 1em auto 1em auto;
+    width: 500px;
+    padding: .5em;
+    border-radius: 5px;
+  }
+
+  #binary-tree{
+    margin-top: 10rem;
+  }
+  
+  #visual-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: .5em;
+  }
+  
+  /* #array-visual {
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /*Corrected width property*/
+    /* height: 50px; Set an explicit height */
+    /* display: block; Ensure the element is displayed */
+    /* overflow: auto; Handle overflow if necessary */
+
+  #array-container{
+    background-color: #9E7540;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+
+  }
+
+  /* #array-visual{
+    margin: 1em;
+  } */
+
+  
+  header {
+    background-color: #9E7540;
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+    padding: 1em;
+    color:black;
+    top: 0;
+  }
+  
+  button {
+    margin-top: 1em;
+    background-color: #87431D;
+    font-size: 1.1em;
+    color: white;
+    padding: .25em .5em .25em .5em;
+    border: none;
+    border-radius: 3px;
+    font-weight: normal;
+    margin-left: 1rem;
+    margin-right: 1rem ;
+  }
+  
+  button:hover{
+    background-color: #905e1d;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.386);
+  }
+
+  rect:hover, circle:hover, text.circle:hover, text.rect:hover {
+    cursor: pointer;
+  }
+  
+  .subtext {
+    font-size: .8em;
+    font-weight: 400;
+  }
+  
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  
+  .svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+  .main-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  .instructions-div div{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+
+  .instructions-div{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .instructions{
+      display: flex;
+      justify-content: center;
+      padding-top: 0.1rem;
+      gap: 2.5rem;
+  }
+
+  #green{
+    background-color: green;
+  }
+
+  #gray{
+    background-color: gray;
+  }
+
+  #blue{
+    background-color: blue;
+  }
+
+  #highlighted{
+    
+    border: 3.5px solid black;
+  }
+
+  .hidden{
+    display: none;
+  }

@@ -1,0 +1,395 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    position: relative; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header video#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send the video to the back */
+}
+
+.header .header-content {
+    position: relative; /* Create a new stacking context */
+    z-index: 1; /* Bring the content to the front */
+}
+
+
+.header .logo {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.header .nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+     
+}
+
+.header .nav ul li {
+    display: inline;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+ 
+.header .nav ul li a:hover {
+    color: #00ff80;
+    border: #00ff803a;
+    border-style:solid;
+    border-radius: 10px;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('AI_Generated_Image_2024-06-01_454952495029201.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    font-size: 4em; 
+    -webkit-text-stroke: 2px #000; 
+    color: #fff; /* Text color */
+    margin-bottom: 1rem;
+    animation: zoom-in 1.5s ease-out forwards; /* Zoom-in animation */
+}
+
+.hero p {
+    font-size: 2em; /* Increased font size */
+    -webkit-text-stroke: 1px #000; 
+    color: #fff; /* Text color */
+    margin-bottom: 2rem;
+    animation: fade-in 2s ease-out forwards 1s; /* Fade-in animation with delay */
+}
+
+.cta-button {
+    background-color: #57ffcd;
+    color: #333;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    animation: fade-in 2s ease-out forwards 2s; /* Fade-in animation with delay */
+}
+
+.cta-button:hover {
+    background-color: #45e6b1;
+}
+
+/* Animation styles */
+@keyframes zoom-in {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add default animations to class names */
+.animated {
+    animation-duration: 3s;
+}
+
+.hero h2.zoom-in {
+    animation-name: zoom-in;
+}
+
+.hero p.fade-in {
+    animation-name: fade-in;
+}
+
+.hero .cta-button.fade-in {
+    animation-name: fade-in;
+}
+
+
+/* Sections */
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features {
+    background: url('Default_STYLISH_ABTRACT_STOCK_LIGHT_BLUE_BACKGROUND_2.jpg') no-repeat center center/cover;
+    padding: 4rem 0;
+}
+
+.feature-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+/* Attractive Section */
+.attractive-section {
+    background: url('Default_STYLISH_ABTRACT_STOCK_cyan_BLUE_BACKGROUND_3.jpg') no-repeat center center/cover;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.attractive-section h2,
+.attractive-section p,
+.attractive-section ul,
+.attractive-section h3 {
+    margin-bottom: 1rem;
+}
+
+.attractive-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.attractive-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Demo Section */
+.demo {
+    background: url('Default_Visualize_and_Analyze_Watch_the_magic_happen_as_your_0.jpg') no-repeat center center/cover;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.demo .video-wrapper {
+    margin-bottom: 2rem;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #ffdd57;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
+
+.footer-social a {
+    color: #ff57a5;
+    margin: 0 0.5rem;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffc107;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+    }
+}
+
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    animation: fadeOut 2s ease-in-out forwards 3s;
+}
+
+#splash img {
+    max-width: 80%;
+    max-height: 80%;
+    animation: zoomIn 2s ease;
+}
+
+#splash h1 {
+    color: #fff;
+    font-size: 2em;
+    margin-top: 20px;
+    animation: fadeIn 2s ease;
+}
+
+#content {
+    display: none;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        z-index: 10;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}

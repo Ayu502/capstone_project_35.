@@ -1,0 +1,123 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+#queue-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 80%;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+
+#queue {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+
+.queue-element {
+    width: 100px;
+    height: 80px;
+    background-color: #28a745;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.queue-element-enter {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.queue-element-exit {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+#front {
+    position: absolute;
+    top: -30px;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffeb3b;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#queue-size {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#controls input {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+
+#controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#controls button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+#controls button:focus {
+    outline: none;
+}

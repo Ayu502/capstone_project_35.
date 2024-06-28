@@ -1,0 +1,65 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+input {
+    font-size: 1.1em;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+#title {
+    background-color: #043688;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 1.75em;
+    margin-right: 2rem;
+}
+
+#hashmap-visual {
+    margin-top: 5rem;
+}
+
+#options {
+    margin-top: 1rem;
+}
+
+header {
+    background-color: #5BBCFF;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+button {
+    margin: 0.8rem 0.8rem 0 0.8rem;
+    background-color: #043688;
+    font-size: 1.1em;
+    color: white;
+    padding: 0.38rem 0.6rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px 4px rgba(255, 255, 255, 0.764);
+    background-color: #0f459b;
+    cursor: pointer;
+}
